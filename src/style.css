@@ -16,7 +16,7 @@ select {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 25px;
   margin: 10px 0 0 0;
 }
 
@@ -28,7 +28,7 @@ h2 {
 }
 
 .time {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -50,6 +50,7 @@ h2 {
 
 .date {
   margin: 10px 0;
+  font-size: 15px;
 }
 
 .city:last-child {

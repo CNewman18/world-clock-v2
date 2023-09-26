@@ -7,7 +7,7 @@ function updateTime() {
   let newYorkTime = moment().tz("America/New_York");
   newYorkDateElement.innerHTML = newYorkTime.format("Do MMMM YYYY");
   newYorkTimeElement.innerHTML = newYorkTime.format(
-    "hh:mm:ss[<small>] A[</small>]"
+    "h:mm:ss[<small>] A[</small>]"
   );
 
   // Dubai
@@ -17,9 +17,7 @@ function updateTime() {
   let dubaiTimeElement = dubaiElement.querySelector(".time");
   let dubaiTime = moment().tz("Asia/Dubai");
   dubaiDateElement.innerHTML = dubaiTime.format("Do MMMM YYYY");
-  dubaiTimeElement.innerHTML = dubaiTime.format(
-    "hh:mm:ss[<small>] A[</small>]"
-  );
+  dubaiTimeElement.innerHTML = dubaiTime.format("h:mm:ss[<small>] A[</small>]");
 
   // Chiang Mai
 
@@ -29,7 +27,7 @@ function updateTime() {
   let chiangMaiTime = moment().tz("Asia/Bangkok");
   chiangMaiDateElement.innerHTML = chiangMaiTime.format("Do MMMM YYYY");
   chiangMaiTimeElement.innerHTML = chiangMaiTime.format(
-    "hh:mm:ss[<small>] A[</small>]"
+    "h:mm:ss[<small>] A[</small>]"
   );
 
   // Vienna
@@ -40,7 +38,7 @@ function updateTime() {
   let viennaTime = moment().tz("Europe/Vienna");
   viennaDateElement.innerHTML = viennaTime.format("Do MMMM YYYY");
   viennaTimeElement.innerHTML = viennaTime.format(
-    "hh:mm:ss[<small>] A[</small>]"
+    "h:mm:ss[<small>] A[</small>]"
   );
 }
 
