@@ -53,11 +53,6 @@ h2 {
   font-size: 15px;
 }
 
-.city:last-child {
-  border-bottom: none;
-  margin-bottom: 5px;
-}
-
 footer {
   text-align: center;
   margin: 20px 0;

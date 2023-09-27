@@ -6,18 +6,20 @@
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>World Clock by Charlie Newman</title>
   </head>
   <body>
     <h1>🌍World Clock⏱️</h1>
     <div class="container">
-      <select name="" id="">
+      <select name="" id="cities">
         <option value="">Select a city</option>
-        <option value="">Sydney</option>
-        <option value="">Copenhagen</option>
-        <option value="">Los Angeles</option>
-        <option value="">Tokyo</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="Europe/Copenhagen">Copenhagen</option>
+        <option value="America/Los_Angeles">Los Angeles</option>
+        <option value="Asia/Tokyo">Tokyo</option>
       </select>
+      <div id="new-city"></div>
       <div class="city" id="new-york">
         <div>
           <h2>New York</h2>
