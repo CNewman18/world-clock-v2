@@ -40,6 +40,21 @@ function updateTime() {
   viennaTimeElement.innerHTML = viennaTime.format(
     "h:mm:ss[<small>] A[</small>]"
   );
+
+  if (
+    (moment().hour() > 6 && moment().format("A") === "PM") ||
+    (moment().hour() < 6 && moment().format("A") === "AM")
+  ) {
+    let body = document.querySelector("body");
+    let container = document.querySelector("#container");
+    body.classList.add("dark-body");
+    container.classList.add("dark-container");
+  } else {
+    let body = document.querySelector("body");
+    let container = document.querySelector("#container");
+    body.classList.add("light-body");
+    container.classList.add("light-container");
+  }
 }
 
 function displayNewCity(event) {
