@@ -43,8 +43,11 @@ function updateTime() {
 }
 
 function displayNewCity(event) {
-  let newCityElement = document.querySelector("#new-city");
   let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
+  let newCityElement = document.querySelector("#new-city");
   let cityTime = moment().tz(cityTimeZone);
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   newCityElement.innerHTML = `  <div class="city">
