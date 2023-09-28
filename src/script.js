@@ -59,6 +59,9 @@ function displayNewCity(event) {
           "h:mm:ss"
         )}<small>${cityTime.format("A")}</small></div>
       </div>`;
+  setTimeout(() => {
+    displayNewCity(event);
+  }, 1000);
 }
 
 updateTime();
